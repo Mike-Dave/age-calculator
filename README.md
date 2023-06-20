@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- [My Solution]()
-- [Live Site URL]()
+- [My Solution](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q/hub)
+- [Live Site URL](https://mike-dave.github.io/age-calculator/)
 
 ## My process
 
