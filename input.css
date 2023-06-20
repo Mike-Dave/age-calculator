@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.date--styling {
+  @apply uppercase font-light tracking-[3px] text-base text-smokeyGrey;
+}
+
+.error--color {
+  @apply text-lightRed;
+}
+
+.border--error {
+  @apply border-lightRed outline-lightRed;
+}
+
+/* REMOVING UP AND DOWN ARROWS */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

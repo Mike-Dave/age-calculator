@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="output.css" />
+
+    <!-- JS FILE LINK -->
+    <script defer src="script.js"></script>
+  </head>
+  <body
+    class="flex md:min-h-screen items-center justify-center bg-offWhite font-poppins"
+  >
+    <main
+      class="bg-white w-11/12 p-8 mt-20 rounded-t-3xl rounded-bl-3xl rounded-br-[120px] md:mt-0 max-w-xl md:p-12"
+    >
+      <section class="flex gap-4 mt-4 md:w-10/12">
+        <div class="relative">
+          <h1 id="day-heading" class="date--styling">Day</h1>
+          <input
+            id="day-input-area"
+            class="border-2 w-full p-2 rounded-md outline-offWhite pl-4 md:p-3 cursor-pointer"
+            type="number"
+            name="day"
+            placeholder="DD"
+            aria-placeholder="DD"
+          />
+          <p
+            id="day-error-msg"
+            class="text-[0.65rem] italic absolute top-16 mt-2 md:top-20 md:mt-1 text-lightRed hidden"
+          >
+            This field is required
+          </p>
+        </div>
+        <div class="relative">
+          <h1 id="month-heading" class="date--styling">Month</h1>
+          <input
+            id="month-input-area"
+            class="border-2 w-full p-2 rounded-md outline-offWhite pl-4 md:p-3 cursor-pointer"
+            type="number"
+            name="month"
+            placeholder="MM"
+            aria-placeholder="MM"
+          />
+          <p
+            id="month-error-msg"
+            class="text-[0.65rem] inlin italic absolute top-16 mt-2 md:top-20 md:mt-1 text-lightRed hidden"
+          >
+            This field is required
+          </p>
+        </div>
+        <div class="relative">
+          <h1 id="year-heading" class="date--styling">Year</h1>
+          <input
+            class="border-2 w-full p-2 rounded-md outline-offWhite pl-4 md:p-3 cursor-pointer"
+            type="number"
+            name="year"
+            id="year-input-area"
+            placeholder="YYYY"
+            aria-placeholder="YYYY"
+          />
+          <p
+            id="year-error-msg"
+            class="text-[0.65rem] italic absolute top-16 mt-2 md:top-20 md:mt-1 text-lightRed hidden"
+          >
+            This field is required
+          </p>
+        </div>
+      </section>
+      <section class="mt-14 relative">
+        <hr class="border-ligghtGrey border-t-2" />
+        <svg
+          id="calc-date-btn"
+          class="bg-purple p-3.5 rounded-full mx-auto absolute -top-7 left-0 right-0 md:left-auto hover:bg-offBlack cursor-pointer"
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="58"
+          viewBox="0 0 46 44"
+        >
+          <g fill="none" stroke="#FFF" stroke-width="2">
+            <path
+              d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+            />
+          </g>
+        </svg>
+      </section>
+      <section class="mt-16 md:mt-10">
+        <h1 class="text-5xl italic font-bold my-2 md:text-7xl">
+          <span id="year-text" class="text-purple">--</span> years
+        </h1>
+        <h1 class="text-5xl italic font-bold my-2 md:text-7xl">
+          <span id="month-text" class="text-purple">--</span> months
+        </h1>
+        <h1 class="text-5xl italic font-bold my-2 md:text-7xl">
+          <span id="day-text" class="text-purple">--</span> days
+        </h1>
+      </section>
+    </main>
+  </body>
+</html>
