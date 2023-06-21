@@ -106,6 +106,9 @@ const ageCalculatorDisplay = function () {
     dayText.innerHTML = calculatedDate.day;
     monthText.innerHTML = calculatedDate.month;
     yearText.innerHTML = calculatedDate.year;
+    dayInput.value = "";
+    monthInput.value = "";
+    yearInput.value = "";
   }
 
   if (yearInputValue === "" || monthInputValue === "" || dayInputValue === "") {
@@ -125,9 +128,6 @@ const ageCalculatorDisplay = function () {
     errorMessageDisplay(dayErrorMsg);
     dayErrorMsg.innerHTML = "Must be a valid date";
   }
-  dayInput.value = "";
-  monthInput.value = "";
-  yearInput.value = "";
 };
 
 calcDateBtn.addEventListener("click", ageCalculatorDisplay);
